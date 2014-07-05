@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet"  type="text/css" href="css_bootstrap/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css_bootstrap/bootstrap-responsive.css">
+    <script src="angular-1.2.19/angular.min.js"></script>
+    <script src="controladores.js"></script>
+    <title>Trovadores de la vida</title>
+</head>
+<body ng-app class="container">
+<h2 id="fonts">Trovadores de la vida</h2>
+    <div class="row">
+        <div  ng-controller="controllerTrovadores" class="span12">
+            <table class="table " id="fonts">
+                <tr class="span12">
+                    <td class="span4">
+                        Nombre
+                    </td>
+                    <td class="span4">
+                        Eliminar
+                    </td>
+                    <td class="span4">
+                        Editar
+                    </td>
+                </tr>
+                <tr class="span12" ng-repeat="trovador in trovadores">
+                    <td class="span4">
+                        <span>{{trovador.name}}</span>
+                    </td>
+                    <td class="span4">
+                        <input id="demo_box_2" class="css-checkbox"  type="checkbox" ng-model="trovador.hecho">
+                    </td>
+                    <td class="span4">
+                        <input type="checkbox" name="editGroup" ng-model="trovador.edit" >
+                    </td>
+                </tr>
+            </table>
+            <div class="span6">
+                <form ng-submit="addTrovador()" class="form-inline">
+                    <div class="btn-group" data-toggle="buttons-checkbox">
+                        <input   class="input input-xlarge" type="text" placeholder="Añade tu trovador favorito"  ng-model="nuevoTrovador">
+                        <button class="btn btn-primary" type="submit">Agregar</button>
+                        <button class="btn btn-danger" type="button" ng-click="deleteTrovador()">Eliminar</button>
+                        <button class="btn btn-success" type="button" ng-click="editTrovador()">Editar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background: #8ea4aa; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover,  #8ea4aa 0%, #544e50 94%); /* FF3.6+ */
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#8ea4aa), color-stop(94%,#544e50)); /* Chrome,Safari4+ */
+    background: -webkit-radial-gradient(center, ellipse cover,  #8ea4aa 0%,#544e50 94%); /* Chrome10+,Safari5.1+ */
+    background: -o-radial-gradient(center, ellipse cover,  #8ea4aa 0%,#544e50 94%); /* Opera 12+ */
+    background: -ms-radial-gradient(center, ellipse cover,  #8ea4aa 0%,#544e50 94%); /* IE10+ */
+    background: radial-gradient(ellipse at center,  #8ea4aa 0%,#544e50 94%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8ea4aa', endColorstr='#544e50',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+    font-family: 'BrushScriptStdMedium';
+    src: url('brushscriptstd.eot');
+    src: local('Brush Script Std'), local('BrushScriptStd'), url('brushscriptstd.woff') format('woff'), url('brushscriptstd.ttf') format('truetype');}
+.classname{ font:21px bold italic Arial;
+}
+
+#fonts {
+    font-family: 'BrushScriptStdMedium';
+    src: url('brushscriptstd.eot');
+    src: local('Brush Script Std'), local('BrushScriptStd'),
+         url('brushscriptstd.woff') format('woff'), url('brushscriptstd.ttf')
+    format('truetype');
+    color: #f5f5f5;
+}
+
